@@ -47,7 +47,7 @@
             <children>
                 <ImageView fitHeight="30.0" fitWidth="30.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
                     <image>
-                        <Image url="@../../feature_extraction/view/picture/exitButton.png" />
+                        <Image url="@/com/iip/ui/feature_extraction/view/picture/exitButton.png" />
                     </image>
                 </ImageView>
             </children>

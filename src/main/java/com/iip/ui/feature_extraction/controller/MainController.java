@@ -113,7 +113,7 @@ public class MainController {
             if (paneStep1 == null){
                 try {
                     FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(MainController.class.getResource("../view/FE1ParticipleView.fxml"));
+                    loader.setLocation(MainController.class.getResource("/com/iip/ui/feature_extraction/view/FE1ParticipleView.fxml"));
                     paneStep1 = loader.load();
                     paneStep1.setPrefSize(feMainViewPane.getWidth()-60, feMainViewPane.getHeight()-60);
                     FE1ParticipleController controller = loader.getController();
@@ -134,7 +134,7 @@ public class MainController {
             if (paneStep2 == null){
                 try {
                     FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(MainController.class.getResource("../view/FE2KeywordsView.fxml"));
+                    loader.setLocation(MainController.class.getResource("/com/iip/ui/feature_extraction/view/FE2KeywordsView.fxml"));
                     paneStep2 = loader.load();
                     paneStep2.setPrefSize(feMainViewPane.getWidth()-60, feMainViewPane.getHeight()-60);
                     FE2KeywordsController controller = loader.getController();
@@ -156,7 +156,7 @@ public class MainController {
             if (paneStep3 == null){
                 try {
                     FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(MainController.class.getResource("../view/FE3Doc2vecView.fxml"));
+                    loader.setLocation(MainController.class.getResource("/com/iip/ui/feature_extraction/view/FE3Doc2vecView.fxml"));
                     paneStep3 = loader.load();
                     paneStep3.setPrefSize(feMainViewPane.getWidth()-60, feMainViewPane.getHeight()-60);
                     FE3Doc2vecController controller = loader.getController();
@@ -178,7 +178,7 @@ public class MainController {
             if (paneStep4 == null){
                 try {
                     FXMLLoader loader = new FXMLLoader();
-                    loader.setLocation(MainController.class.getResource("../view/FE4TextsummyView.fxml"));
+                    loader.setLocation(MainController.class.getResource("/com/iip/ui/feature_extraction/view/FE4TextsummyView.fxml"));
                     paneStep4 = loader.load();
                     paneStep4.setPrefSize(feMainViewPane.getWidth()-60, feMainViewPane.getHeight()-60);
                     FE4TextsummyController controller = loader.getController();
@@ -193,15 +193,15 @@ public class MainController {
         }
 
         if (selectedMenuButton == feStep5){
-            feStep4.getStyleClass().clear();
-            feStep4.getStyleClass().add("menuButtonSelected");
+            feStep5.getStyleClass().clear();
+            feStep5.getStyleClass().add("menuButtonSelected");
             feMainTitle.setText("FE-配置");
 
             if (paneConfig == null){
                 try {
                     FXMLLoader loader = new FXMLLoader();
 //                    loader.setResources(ResourceBundle.getBundle("my", Locale.CHINA));
-                    loader.setLocation(MainController.class.getResource("../view/FE5ConfigView.fxml"));
+                    loader.setLocation(MainController.class.getResource("/com/iip/ui/feature_extraction/view/FE5ConfigView.fxml"));
                     paneConfig = loader.load();
                     paneConfig.setPrefSize(feMainViewPane.getWidth()-60, feMainViewPane.getHeight()-60);
                     FE5ConfigController controller = loader.getController();

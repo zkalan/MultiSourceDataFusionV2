@@ -69,7 +69,7 @@ public class E1LoginViewController {
      */
     public void drawSelectFunctionPage(){
         try {
-            Parent target = FXMLLoader.load(getClass().getResource("../view/SelectWindows.fxml"));
+            Parent target = FXMLLoader.load(getClass().getResource("/com/iip/ui/entrance/view/SelectWindows.fxml"));
             Scene scene = new Scene(target);
             Stage stg = new Stage();
             stg.setScene(scene);

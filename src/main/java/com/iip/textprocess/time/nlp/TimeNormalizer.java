@@ -38,7 +38,7 @@ public class TimeNormalizer implements Serializable {
     public TimeNormalizer() {
         if (patterns == null) {
             try {
-                InputStream in = getClass().getResourceAsStream("/TimeExp.m");
+                InputStream in = getClass().getResourceAsStream("/com/iip/data/entity/TimeExp.m");
                 ObjectInputStream objectInputStream = new ObjectInputStream(
                         new BufferedInputStream(new GZIPInputStream(in)));
                 patterns = readModel(objectInputStream);

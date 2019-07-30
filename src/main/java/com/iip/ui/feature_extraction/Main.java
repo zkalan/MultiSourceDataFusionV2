@@ -63,7 +63,7 @@ public class Main extends Application {
         // 主程序开始
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("view/MainView.fxml"));
+            fxmlLoader.setLocation(getClass().getResource("/com/iip/ui/feature_extraction/view/MainView.fxml"));
             Parent root = fxmlLoader.load();
             MainController controller = fxmlLoader.getController();
             controller.initialize();
@@ -84,7 +84,7 @@ public class Main extends Application {
                 }
             });
             Scene scene = new Scene(root);
-            scene.getStylesheets().add(getClass().getResource("view/stylesheet/ComboBox.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("/com/iip/ui/feature_extraction/view/stylesheet/ComboBox.css").toExternalForm());
             primaryStage.setScene(scene);
             primaryStage.initStyle(StageStyle.UNDECORATED);
 

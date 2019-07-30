@@ -62,7 +62,7 @@ public class MainNer extends Application {
         // 主程序开始
         try {
             // 读取fxml文件
-            Parent root = FXMLLoader.load(getClass().getResource("view/nerMainView.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/iip/ui/ner/view/nerMainView.fxml"));
 
             // 设定stage可以通过鼠标拖动到屏幕的其他地方
             root.setOnMousePressed(new EventHandler<MouseEvent>() {

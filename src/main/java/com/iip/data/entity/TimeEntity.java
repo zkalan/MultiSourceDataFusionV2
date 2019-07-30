@@ -27,7 +27,7 @@ public class TimeEntity extends Entity {
 
     public static List<Entity> entityRecognition(String sentence)
             throws URISyntaxException {
-        URL url = TimeNormalizer.class.getResource("/TimeExp.m");
+        URL url = TimeNormalizer.class.getResource("/com/iip/data/entity/TimeExp.m");
         System.out.println(url.toURI().toString());
         TimeNormalizer normalizer = new TimeNormalizer(url.toURI().toString());
         normalizer.setPreferFuture(true);

@@ -33,7 +33,7 @@ public class TimeNerViewController extends RootController implements Initializab
         tab.setText(text);
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(TimeNerTabViewController.class.getResource("../view/TimeNerTabView.fxml"));
+            loader.setLocation(TimeNerTabViewController.class.getResource("/com/iip/ui/ner/view/TimeNerTabView.fxml"));
             BorderPane pane = loader.load();
             tab.setContent(pane);
         }catch (Exception ex){

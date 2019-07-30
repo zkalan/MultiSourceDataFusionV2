@@ -151,7 +151,7 @@ public class SpaceTimeMainViewController extends RootController implements Initi
         currentMenuPane = null;
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(SpaceTimeMainViewController.class.getResource("../view/UserAnalyse.fxml"));
+            loader.setLocation(SpaceTimeMainViewController.class.getResource("/com/iip/ui/space_time/view/UserAnalyse.fxml"));
             connectionConfigPane = loader.load();
             connectionConfigPane.setPrefSize(BPMainViewPane.getWidth()-60, BPMainViewPane.getHeight()-60);
         } catch (IOException e) {
@@ -169,17 +169,17 @@ public class SpaceTimeMainViewController extends RootController implements Initi
         System.out.println("In SpaceTimeMainViewController initialize");
         menuModules = new ArrayList<MenuModule>();
         // 加载主页界面
-        menuModules.add(new MenuModule(APHomePage, "../view/HomePage.fxml", "主页", "HomePageController"));
+        menuModules.add(new MenuModule(APHomePage, "/com/iip/ui/space_time/view/HomePage.fxml", "主页", "HomePageController"));
         // 加载数据界面
-        menuModules.add(new MenuModule(APLoadData, "../view/LoadDataView.fxml", "载入数据", "LoadDataViewController"));
+        menuModules.add(new MenuModule(APLoadData, "/com/iip/ui/space_time/view/LoadDataView.fxml", "载入数据", "LoadDataViewController"));
         // 分词界面
-        menuModules.add(new MenuModule(APParticiple, "../view/ParticipleView.fxml", "分词", "ParticipleViewController"));
+        menuModules.add(new MenuModule(APParticiple, "/com/iip/ui/space_time/view/ParticipleView.fxml", "分词", "ParticipleViewController"));
         // 实体界面
-        menuModules.add(new MenuModule(APEntity, "../view/EntityView.fxml", "实体", "EntityViewController"));
+        menuModules.add(new MenuModule(APEntity, "/com/iip/ui/space_time/view/EntityView.fxml", "实体", "EntityViewController"));
         // 时空性界面
-        menuModules.add(new MenuModule(APSpaceTime, "../view/SpaceTimeView.fxml", "跨时空特性", "SpaceTimeViewController"));
+        menuModules.add(new MenuModule(APSpaceTime, "/com/iip/ui/space_time/view/SpaceTimeView.fxml", "跨时空特性", "SpaceTimeViewController"));
         // 设置界面
-        menuModules.add(new MenuModule(APSetting, "../view/SettingView.fxml", "设置", "SettingViewController"));
+        menuModules.add(new MenuModule(APSetting, "/com/iip/ui/space_time/view/SettingView.fxml", "设置", "SettingViewController"));
 
         changeMenuView(APHomePage);
     }

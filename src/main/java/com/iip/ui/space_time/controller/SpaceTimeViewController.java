@@ -59,16 +59,16 @@ public class SpaceTimeViewController extends RootController implements Initializ
 
     public void updateTrVEntityShow(List<PeopleOrientation> peopleOrientation){
         TreeItem treeItem = new TreeItem("人名总览");
-        ImageView peopleIcon = loadImageView("../view/picture/people.png", 30, 30);
+        ImageView peopleIcon = loadImageView("/com/iip/ui/space_time/view/picture/people.png", 30, 30);
         treeItem.setGraphic(peopleIcon);
 
         for(int i=0 ; i<peopleOrientation.size() ; i++){
             PeopleOrientation peo = peopleOrientation.get(i);
             TreeItem peopleItem = new TreeItem(String.valueOf(i+1)+"."+peo.getName());
-            ImageView menIcon = loadImageView("../view/picture/men.png", 28, 28);
+            ImageView menIcon = loadImageView("/com/iip/ui/space_time/view/picture/men.png", 28, 28);
             peopleItem.setGraphic(menIcon);
             for (Orientation ori: peo.getOrientations()){
-                ImageView houseIcon = loadImageView("../view/picture/house.png", 16, 16);
+                ImageView houseIcon = loadImageView("/com/iip/ui/space_time/view/picture/house.png", 16, 16);
                 System.out.println("debug: " + ori.getPlace()+" ; " + ori.getDate().toString());
                 TreeItem oriItem = new TreeItem(ori.getPlace()+" ; " + ori.getDate().toString());
                 oriItem.setGraphic(houseIcon);

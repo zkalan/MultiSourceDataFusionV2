@@ -42,7 +42,7 @@ public class ParticipleViewController extends RootController implements Initiali
         tab.setText(text);
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(ParticipleTabViewController.class.getResource("../view/ParticipleTabView.fxml"));
+            loader.setLocation(ParticipleTabViewController.class.getResource("/com/iip/ui/ner/view/ParticipleTabView.fxml"));
             BorderPane pane = loader.load();
             tab.setContent(pane);
         }catch (Exception ex){

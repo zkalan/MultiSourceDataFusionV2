@@ -146,21 +146,21 @@ import java.util.ResourceBundle;
             System.out.println("In nerMainViewController initialize");
             menuModules = new ArrayList<MenuModule>();
             // 加载数据界面
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APLoadData, "../view/LoadDataView.fxml", "加载数据", "LoadDataViewController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APLoadData, "/com/iip/ui/ner/view/LoadDataView.fxml", "加载数据", "LoadDataViewController"));
             // 分词界面
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APParticiple, "../view/ParticipleView.fxml", "中文分词", "ParticipleViewController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APParticiple, "/com/iip/ui/ner/view/ParticipleView.fxml", "中文分词", "ParticipleViewController"));
             // 词性标注界面
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APPos, "../view/PosView.fxml", "词性标注", "PosViewController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APPos, "/com/iip/ui/ner/view/PosView.fxml", "词性标注", "PosViewController"));
             // 人名识别
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APPersonNer, "../view/PersonNerView.fxml", "人名识别", "PersonNerViewController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APPersonNer, "/com/iip/ui/ner/view/PersonNerView.fxml", "人名识别", "PersonNerViewController"));
             // 地名识别
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APLocationNer, "../view/LocationNerView.fxml", "地名识别", "LocationNerViewController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APLocationNer, "/com/iip/ui/ner/view/LocationNerView.fxml", "地名识别", "LocationNerViewController"));
             // 机构名识别
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APOrganizationNer, "../view/OrganizationNerView.fxml", "机构名识别", "OrganizationNerViewController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APOrganizationNer, "/com/iip/ui/ner/view/OrganizationNerView.fxml", "机构名识别", "OrganizationNerViewController"));
             // 时间识别
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APTimeNer, "../view/TimeNerView.fxml", "时间识别", "TimeNerViewController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APTimeNer, "/com/iip/ui/ner/view/TimeNerView.fxml", "时间识别", "TimeNerViewController"));
             // 设置界面
-            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APSetting, "../view/ConfigView.fxml", "设置", "ConfigController"));
+            menuModules.add(new com.iip.ui.ner.controller.MenuModule(APSetting, "/com/iip/ui/ner/view/ConfigView.fxml", "设置", "ConfigController"));
         }
 
     }

@@ -50,7 +50,7 @@ public class PosViewController extends RootController implements Initializable {
         tab.setText(text);
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(ParticipleTabViewController.class.getResource("../view/PosTabView.fxml"));
+            loader.setLocation(ParticipleTabViewController.class.getResource("/com/iip/ui/ner/view/PosTabView.fxml"));
             BorderPane pane = loader.load();
             tab.setContent(pane);
         }catch (Exception ex){
